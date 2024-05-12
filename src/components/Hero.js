@@ -1,46 +1,66 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
-import heroImg from '../images/TechsMountingTV.jpeg';
+import heroImg from '../images/homepage.jpg';
 
 const Hero = () => {
+    
     return (
         <>
-            <div className="hero" id='hero'>
+            <head>
+                <meta name="viewport" content="width=device-width, initial-scale=1" />
+            </head>
+            {/* <div className="hero" id='hero'>
                 <div>
                     <NavBar />
                 </div>
-                
-                <div className="m-auto overflow-hidden mx-4 mt-8 lg:mt-4 p-2 md:p-12 h-5/6" data-aos="zoom-in">
-
-                    <div id='hero' className="flex flex-col lg:flex-row py-8 justify-between text-center lg:text-left">
-                        <div className="lg:w-1/2 flex flex-col justify-center" data-aos="zoom-in" data-aos-delay="200">
-                            <h1 className="mb-5 md:text-5xl text-3xl font-bold text-blue-900">
-                            {/* We build digital solutions to help businesses scale */}
-                            Atlanta's #1 Same-Day TV Mounting Service
+                <div className="m-auto overflow-hidden mx-2 mt-4 p-2 md:h-auto h-screen " data-aos="zoom-in">
+                    <div id='heroCard' className="flex flex-col py-8 justify-center items-center text-center md:flex-row md:justify-between md:items-center">
+                        <div className="w-full md:w-1/2 flex flex-col justify-center centerText" data-aos="zoom-in" data-aos-delay="200">
+                            <h1 className="mb-5 text-4xl md:text-5xl lg:text-6xl font-bold text-gray-800" style={{ textShadow: '1.5px 1.5px 3px white, -1px -1px 2px gray' }}>
+                                Atlanta's Best Same-Day TV Mounting Service
                             </h1>
-                            <div className="text-xl font-semibold tracking-tight mb-5 text-gray-500">We are a team of highly motivated and skilled technicians dedicated to delivering high quality TV, soundbar, and security camera mounting</div>
-                            <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                                <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
-                                    Get a Free Quote
-                                    <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                                </a>
-                                {/* <Link to="/contact" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg shadow-xl rounded-2xl sm:w-auto sm:mb-0">
-                                    Get Started
-                                    <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
-                                </Link> */}
-                                {/* <a href="#_" className="inline-flex items-center justify-center w-full px-6 py-3 my-4 text-lg text-white bg-gray-500 hover:bg-gray-400 shadow-xl rounded-2xl sm:w-auto sm:mb-0">
-                                    Learn More
-                                    <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path></svg>
-                                </a> */}
+                            <div className="text-lg md:text-xl lg:text-2xl font-semibold tracking-tight mb-5 text-gray-700" style={{ textShadow: '2px 2px 4px rgba(237, 233, 157, 0.5)' }}>
+                                We are a team of highly motivated and skilled technicians dedicated to delivering high-quality TV, soundbar, and security camera mounting
                             </div>
-                        </div>
-                        <div className="flex lg:justify-end w-full lg:w-1/2" data-aos="fade-up" data-aos-delay="700" >
-                            <img alt="card img" className="heroImg rounded-t float-right duration-1000 w-full"  src={heroImg} />
+                            <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
+                                <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center px-6 py-3 my-4 text-lg md:text-xl shadow-xl rounded-2xl">
+                                    Get a Free Quote
+                                    <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                                    </svg>
+                                </a>
+                            </div>
                         </div>
                     </div>
                 </div>
+            </div> */}
+
+                                {/* <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center px-6 py-3 my-4 text-lg md:text-xl shadow-xl rounded-2xl">
+                                    Get a Free Quote
+                                    <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                        <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
+                                    </svg>
+                                </a> */}
+            <div className="hero-section">
+                <div>
+                    <NavBar />
+                </div>
+                {/* <img src="./images/homepage.jpg" alt="Home theater setup" className="hero-image"/> */}
+                <div className="hero-content">
+                    <h1>Atlanta's Best Same Day TV Mounting Service</h1>
+                    <p>We are a team of skilled technicians and an insured professional service dedicated to delivering high-quality TV, soundbar, and security camera mounting</p>
+                    <div className="hero-ctas">
+                        <div className="call-now-btn">CALL US NOW! 470-206-0288</div>
+                        <a className="setup-appointment-btn" href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank">
+                            Or Get a Free Quote
+                        </a>
+                    </div>
+                </div>
             </div>
+
+
+
         </>
     )
 }

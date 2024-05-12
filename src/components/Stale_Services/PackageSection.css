@@ -1,0 +1,110 @@
+/* PackageCard.css */
+.package-card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    /* Other styles */
+}
+
+.package-card h2 {
+  color: #d70000; /* Example color - adjust as needed */
+  /* Other styles */
+}
+
+.package-card .price {
+  /* Styling for price */
+}
+
+.package-card .features {
+  /* Styling for feature list */
+}
+
+.package-card .contact-button {
+  /* Styling for button */
+}
+
+/* PackageSection.css */
+.package-section {
+  display: flex;
+  flex-direction: column;
+  /* Other styles */
+}
+
+.package-card {
+  max-width: 960px; /* This sets the maximum width of the card */
+  margin: 20px auto; /* Centers the card with auto left and right margins */
+  padding: 20px; /* Adjust padding to your liking */
+  background-color: transparent; /* If you don't want any color */
+  /* Remove box-shadow and border-radius if you don't want the boxed look */
+}
+
+.package-card:hover {
+  transform: translateY(-5px);
+}
+
+.card-content {
+  padding: 20px;
+  position: relative;
+  color: #333; /* Adjust color to match your design */
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between; /* This will space out the title and price */
+  align-items: center;
+  margin-bottom: 20px; /* Gives some space below the header */
+}
+
+.package-title {
+  font-size: 1.5em;
+  color: #d70000; /* Adjust color to match your design */
+  font-weight: bold; /* Makes the text bold */
+}
+
+.package-price {
+  font-size: 1.5em;
+  color: red; /* Replace with the color you want for the price */
+  font-weight: bold;
+
+}
+
+.package-features {
+  list-style: none;
+  padding: 0;
+}
+
+.package-features li {
+  margin-bottom: 8px;
+}
+
+.contact-button {
+  background-color: red; /* Replace with the color you want for the button */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  /* Align the button to the left or center as you prefer */
+  display: block;
+  width: fit-content;
+  margin: 0 auto; /* Centers the button horizontally */
+}
+
+.contact-button:hover {
+  background-color: darken(#d70000, 10%);
+}
+
+.package-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px; /* Adjust gap as needed */
+  padding: 16px;
+}
+
+@media (max-width: 768px) {
+  .package-section {
+    flex-direction: column;
+  }
+}

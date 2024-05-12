@@ -4,10 +4,13 @@ import img2 from '../images/app.svg';
 import img3 from '../images/hosting.svg';
 import img4 from '../images/consultation.svg';
 
+import { HashLink } from 'react-router-hash-link';
+
+
 const Services = () => {
 
     return (
-        <div id="services" className="bg-gray-100 py-12" >
+        <div id="services" className="mt-20 md:mt-20 bg-gray-100 py-12" >
             <section data-aos="zoom-in-down">
                     <div className="my-4 py-4">
                         <h2 className="my-2 text-center text-3xl text-blue-900 uppercase font-bold">services</h2>
@@ -18,16 +21,16 @@ const Services = () => {
                         <h2 className="mt-4 mx-12 text-center text-xl lg:text-2xl font-semibold text-blue-900">We are deeply committed to the growth and success of our clients.</h2>
                     </div>
 
-                    <div className="px-12" data-aos="fade-down" data-aos-delay="600">
+                    <div className="px-12" data-aos="fade-down" data-aos-duration="300">
                         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
                             
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
-                                <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img} />
-                                    <h2 className="font-semibold my-4 text-2xl text-center">TV Mounting</h2>
-                                    <p className="text-md font-medium">
-                                    Elevate your viewing experience with our basic TV mounting and installation service. Our skilled team ensures a secure setup and precise placement, turning your entertainment space into a modern marvel.
-                                    </p>
+                                <HashLink smooth to="/TV-Mounting">
+                                    <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img} />
+                                        <h2 className="font-semibold my-4 text-2xl text-center">TV Mounting</h2>
+                                        <p className="text-md font-medium">Elevate your viewing experience with our basic TV mounting and installation service. Our skilled team ensures a secure setup and precise placement, turning your entertainment space into a modern marvel.</p>
+                                </HashLink>
                                 </div>
                             </div>
 
@@ -96,7 +99,7 @@ const Services = () => {
                             </div>
                             <h3 className="text-3xl  text-blue-900 font-bold">Hassle <span className='font-black'>Free</span></h3>
                             <div>
-                                <p className='my-3 text-xl text-gray-600 font-semibold'>Don’t have a mounting bracket? We can bring one for you!</p>
+                                <p className='my-3 text-xl text-gray-600 font-semibold'>Don’t have a mounting bracket? We can bring one for you! Want the wires hidden? We got you!</p>
                             </div>
                         </div>
 

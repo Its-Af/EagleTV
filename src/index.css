@@ -4,24 +4,133 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body {
-  margin: 0;
+html, body {
   font-family: 'Lato', sans-serif;
+  width: 100%;
+  overflow-x: hidden; /* Ensure this does not hide necessary content */
+  position: relative; /* Positioning context for all elements */
 }
 
-.hero {
-  background: url(./images/hero-bg.svg) top center no-repeat;
+
+/*  */
+/*  */
+/* General styles for the hero section */
+.hero-section {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  align-items: center; /* Centers content vertically */
+  justify-content: center; /* Centers content horizontally */
+  text-align: center;
+  background: url('./images/homepage.jpg') no-repeat center center/cover;
   background-size: cover;
 }
 
-.heroImg {
-  height: 85%;
-  width: 85%;
+/* Semi-transparent overlay to dim the background */
+.hero-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Dark overlay for better text visibility */
+  z-index: 1;
 }
 
+/* Styling for text and buttons inside the hero content */
+.hero-content {
+  position: relative;
+  z-index: 2; /* Ensures text is above the overlay */
+  padding: 2vh 5vw; /* Responsive vertical and horizontal padding */
+  color: white;
+}
+
+/* Responsive Headline styles */
+.hero-content h1 {
+  font-size: 3.5vw; /* Adjusts size based on the width of the viewport */
+  max-font-size: 36px; /* Ensures text doesn't get too big on large screens */
+  min-font-size: 18px; /* Ensures text doesn't get too small on small screens */
+  margin: 0.5em 0; /* Responsive margin using em units */
+}
+
+/* Subheading with slightly smaller text */
+.hero-content p {
+  font-size: 2vw; /* Smaller than the headline */
+  max-font-size: 20px;
+  min-font-size: 12px;
+  margin: 0.5em 0; /* Consistent spacing */
+}
+
+.hero-ctas {
+  display: flex;
+  flex-direction: row; /* Default orientation */
+  justify-content: center; /* Center horizontally */
+  gap: 10px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+  .hero-ctas {
+      flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .navLogo {
+    padding-left: 10px;
+  }
+
+}
+
+/* Responsive button styling */
+.call-now-btn, .setup-appointment-btn {
+  font-size: 1.2vw; /* Responsive font size */
+  max-font-size: 16px;
+  min-font-size: 12px;
+  padding: 1em 2em; /* Em-based padding for scalability */
+  border: none;
+  border-radius: 5px;
+  text-shadow: none;
+  margin: 1em 0.5em; /* Responsive margin */
+  background-color: #007bff; /* Primary button color */
+  transition: background-color 0.3s ease;
+}
+
+.setup-appointment-btn {
+  background-color: #0056b3; /* Secondary button color */
+  cursor: pointer;
+}
+
+/* Hover effects for buttons */
+.call-now-btn:hover, .setup-appointment-btn:hover {
+  opacity: 0.9;
+  background-color: white;
+  color: #0056b3;
+  font-weight: bold;
+}
+
+/* Ensuring text remains visible and buttons are easy to interact with on very small devices */
+@media (max-width: 480px) {
+  .hero-content h1 {
+      font-size: 10vw;
+  }
+  .hero-content p {
+      font-size: 5vw;
+  }
+  .call-now-btn, .setup-appointment-btn {
+      font-size: 3.5vw;
+  }
+}
+
+
+
+
+
+
+
+
 .navLogo {
-  height: 70%;
-  width: 70%;
+  height: 6vh;
 }
 
 .footer {
@@ -36,4 +145,3 @@ body {
 .centerText {
   text-align: center;
 }
-

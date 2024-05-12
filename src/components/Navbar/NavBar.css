@@ -1,0 +1,22 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%; /* Ensure it spans the full width of the viewport */
+    background-color: rgba(255, 255, 255, 0.95); /* Optional: for better visibility */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for depth */
+}
+
+.button {
+    position: absolute;
+    right: 20px; /* Right aligned and 20px from the right edge */
+    top: 15px; /* Positioned 15px from the top */
+}
+
+@media (max-width: 768px) {
+    .button {
+        right: 10px; /* Closer to the edge on smaller screens */
+    }
+}
