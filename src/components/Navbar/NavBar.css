@@ -7,6 +7,7 @@ nav {
     width: 100%; /* Ensure it spans the full width of the viewport */
     background-color: rgba(255, 255, 255, 0.95); /* Optional: for better visibility */
     box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Light shadow for depth */
+    padding: 10px 20px;    
 }
 
 .button {

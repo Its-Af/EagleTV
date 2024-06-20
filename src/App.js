@@ -11,10 +11,12 @@ import {
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import DemoProduct from './pages/DemoProduct';
-import ServicePage from './pages/ServicePage';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
+import GeneralTVInstallations from './pages/services/GeneralTVInstallations';
+import BrickAndFireplaceInstallations from './pages/services/BrickAndFireplaceInstallations';
+
 
 function App() {
   useEffect(() => {
@@ -41,7 +43,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
-            <Route path="/TV-Mounting" element={<ServicePage />} />
+            {/* <Route path="/TV-Mounting" element={<ServicePage />} /> */}
+            <Route path="/services/general-tv-installations" element={<GeneralTVInstallations />} />
+            <Route path="/services/brick-and-fireplace-installations" element={<BrickAndFireplaceInstallations />} />
           </Routes>
         </ScrollToTop>
       </Router>
