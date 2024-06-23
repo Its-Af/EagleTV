@@ -1,16 +1,16 @@
 import React from 'react';
-import './Content.css';
+import '../Content.css';
 import '../../service_components_app.css';
 import ServiceNavBar from '../../navigation/ServiceNavBar';
 
-const BrickAndFireplaceInstallationsContent = () => {
+const GeneralTVInstallationsContent = () => {
     return (
       <div className="app">
             <div className="main">
                 <ServiceNavBar className="service-navbar" />
                 <div className="content">
                     <p>
-                        BRICK AND FIREPLACE INSTALLATIONS
+                        GENERAL TV INSTALLATIONS CONTENT
                     </p>
                     <div className="image-gallery">
                         {/* Add your images here */}
@@ -21,4 +21,4 @@ const BrickAndFireplaceInstallationsContent = () => {
     );
 };
 
-export default BrickAndFireplaceInstallationsContent;
+export default GeneralTVInstallationsContent;

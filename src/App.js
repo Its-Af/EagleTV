@@ -16,6 +16,7 @@ import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
 import GeneralTVInstallations from './pages/services/GeneralTVInstallations';
 import BrickAndFireplaceInstallations from './pages/services/BrickAndFireplaceInstallations';
+import WireConcealment from './pages/services/WireConcealment';
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
             {/* <Route path="/TV-Mounting" element={<ServicePage />} /> */}
             <Route path="/services/general-tv-installations" element={<GeneralTVInstallations />} />
             <Route path="/services/brick-and-fireplace-installations" element={<BrickAndFireplaceInstallations />} />
+            <Route path="/services/wire-concealment" element={<WireConcealment />} />
           </Routes>
         </ScrollToTop>
       </Router>

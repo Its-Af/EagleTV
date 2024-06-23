@@ -24,7 +24,7 @@ const Hero = () => {
                                 We are a team of highly motivated and skilled technicians dedicated to delivering high-quality TV, soundbar, and security camera mounting
                             </div>
                             <div className="mb-4 space-x-0 md:space-x-2 md:mb-8">
-                                <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center px-6 py-3 my-4 text-lg md:text-xl shadow-xl rounded-2xl">
+                                <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-600 hover:bg-blue-800 inline-flex items-center justify-center px-6 py-3 my-4 text-lg md:text-xl shadow-xl rounded-2xl">
                                     Get a Free Quote
                                     <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>
@@ -36,7 +36,7 @@ const Hero = () => {
                 </div>
             </div> */}
 
-                                {/* <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-900 hover:bg-blue-800 inline-flex items-center justify-center px-6 py-3 my-4 text-lg md:text-xl shadow-xl rounded-2xl">
+                                {/* <a href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noopener noreferrer" className="text-white bg-blue-600 hover:bg-blue-800 inline-flex items-center justify-center px-6 py-3 my-4 text-lg md:text-xl shadow-xl rounded-2xl">
                                     Get a Free Quote
                                     <svg className="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
                                         <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd"></path>

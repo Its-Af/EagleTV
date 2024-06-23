@@ -1,6 +1,6 @@
 import React from 'react';
 import NavBar from '../../components/Navbar/NavBar';
-import BrickAndFireplaceInstallationsContent from '../../components/service/content/brickAndFireplaceInstallations/BrickAndFireplaceInstallationsContent';
+import BrickAndFireplaceInstallationsContent from '../../components/service/tv-mounting/content/brickAndFireplaceInstallations/BrickAndFireplaceInstallationsContent';
 
 
 const BrickAndFireplaceInstallations = () => {
