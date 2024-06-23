@@ -14,9 +14,10 @@ import DemoProduct from './pages/DemoProduct';
 
 import {useDocTitle} from './components/CustomHook';
 import ScrollToTop from './components/ScrollToTop';
-import GeneralTVInstallations from './pages/services/GeneralTVInstallations';
-import BrickAndFireplaceInstallations from './pages/services/BrickAndFireplaceInstallations';
-import WireConcealment from './pages/services/WireConcealment';
+import GeneralTVInstallations from './pages/services/tv-mounting/GeneralTVInstallations';
+import BrickAndFireplaceInstallations from './pages/services/tv-mounting/BrickAndFireplaceInstallations';
+import CordCovers from './pages/services/wire-concealment/CordCovers';
+import OutletCreations from './pages/services/wire-concealment/OutletCreations';
 
 
 function App() {
@@ -44,10 +45,14 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/get-demo" element={<DemoProduct />} /> 
-            {/* <Route path="/TV-Mounting" element={<ServicePage />} /> */}
-            <Route path="/services/general-tv-installations" element={<GeneralTVInstallations />} />
-            <Route path="/services/brick-and-fireplace-installations" element={<BrickAndFireplaceInstallations />} />
-            <Route path="/services/wire-concealment" element={<WireConcealment />} />
+
+            {/* TV Mounting Endpoints */}
+            <Route path="/services/tv-installations/general-tv-installations" element={<GeneralTVInstallations />} />
+            <Route path="/services/tv-installations/brick-and-fireplace" element={<BrickAndFireplaceInstallations />} />
+            
+            {/* Wire Concealment Endpoints */}
+            <Route path="/services/wire-concealment/cord-covers" element={<CordCovers />} />
+            <Route path="/services/wire-concealment/outlet-creation" element={<OutletCreations />} />
           </Routes>
         </ScrollToTop>
       </Router>

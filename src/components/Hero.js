@@ -1,7 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import NavBar from '../components/Navbar/NavBar';
-import heroImg from '../images/homepage.jpg';
 
 const Hero = () => {
     
@@ -52,7 +50,7 @@ const Hero = () => {
                     <p>We are a team of skilled technicians and an insured professional service dedicated to delivering high-quality TV, soundbar, and security camera mounting</p>
                     <div className="hero-ctas">
                         <div className="call-now-btn">CALL US NOW! 470-206-0288</div>
-                        <a className="setup-appointment-btn" href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank">
+                        <a className="setup-appointment-btn" href="https://m.me/eagletvmountinggeorgia?ref=w15257972" target="_blank" rel="noreferrer">
                             Or Get a Free Quote
                         </a>
                     </div>

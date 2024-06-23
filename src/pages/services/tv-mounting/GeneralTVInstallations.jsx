@@ -1,6 +1,6 @@
 import React from 'react';
-import NavBar from '../../components/Navbar/NavBar';
-import GeneralTVInstallationsContent from '../../components/service/tv-mounting/content/generalTVInstallations/GeneralTVInstallationsContent';
+import NavBar from '../../../components/Navbar/NavBar';
+import GeneralTVInstallationsContent from '../../../components/service/tv-mounting/content/GeneralTVInstallationsContent';
 
 
 const GeneralTVInstallations = () => {
