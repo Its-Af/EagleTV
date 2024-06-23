@@ -138,7 +138,7 @@ const Services = () => {
                             
                             <div className="bg-white transition-all ease-in-out duration-400  overflow-hidden text-gray-700 hover:bg-gray-500 hover:text-white rounded-lg shadow-2xl p-3 group">
                                 <div className="m-2 text-justify text-sm">
-                                <HashLink smooth to="/services/general-tv-installations">
+                                <HashLink smooth to="/services/tv-installations/general-tv-installations">
                                     <img alt="card img" className="rounded-t group-hover:scale-[1.15] transition duration-1000 ease-in-out" src={img} />
                                         <h2 className="font-semibold my-4 text-2xl text-center">TV Mounting</h2>
                                         <p className="text-md font-medium">Elevate your viewing experience with our basic TV mounting and installation service. Our skilled team ensures a secure setup and precise placement, turning your entertainment space into a modern marvel.</p>
