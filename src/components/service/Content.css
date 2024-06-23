@@ -13,7 +13,7 @@ body {
 .main {
     display: flex;
     flex: 1;
-    margin-top: 60px; /* Adjust according to the height of the NavBar */
+    margin-top: 90px; /* Adjust according to the height of the NavBar */
 }
 
 .service-navbar {

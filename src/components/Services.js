@@ -6,7 +6,7 @@ import img4 from '../images/consultation.svg';
 
 import { HashLink } from 'react-router-hash-link';
 import { Link } from 'react-router-dom';
-import {isMobile} from 'react-device-detect';
+import { isMobile } from 'react-device-detect';
 
 
 
